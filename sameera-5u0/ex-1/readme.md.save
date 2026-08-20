@@ -1,3 +1,7 @@
+
+
+# 1(a) 1.CREATE TABLES OF THE ABOVE DATABASE WITH OUT CONSTRAINTS.
+```
 CREATE TABLE student
 (
  "name" VARCHAR2(20),
@@ -30,7 +34,14 @@ CREATE TABLE grand_report
  grade VARCHAR2(10)
 );
 
-INSERT INTO  student("name", student_number,"class" ,major)
+```
+![OUTPUT](OP-1.png)
+
+
+# 1(a) 2.INSERT ALL VALUES INSIDE THE TABLE.
+```
+
+ INSERT INTO  student("name", student_number,"class" ,major)
 VALUES('smith',17,1,'cs');
 INSERT INTO  student("name", student_number,"class" ,major)
 VALUES('brown',8,2,'cs');
@@ -43,6 +54,11 @@ INSERT INTO course( course_name,course_number, credit_hours,department)
 VALUES('DISCRETE MATHEMATICS',2302,3,'MATH');
 INSERT INTO course( course_name,course_number, credit_hours,department)
 VALUES('DATA BASE',3380,3,'CS');
+
+```
+![OUTPUT](OP-2.png)
+
+```
 
 INSERT INTO section1(section_identifier, course_number,semester, "year", instructor)
 VALUES(85, 'MATH2410', 'FALL', 07, 'KING');
@@ -57,6 +73,10 @@ VALUES(119, 'CS1310', 'FALL', 08, 'ANDERSON');
 INSERT INTO section1(section_identifier, course_number, semester, "year", instructor)
 VALUES(135, 'CS3380', 'FALL', 08, 'STONE');
 
+```
+![output](OP-3.png)
+
+```
 INSERT INTO grand_report(student_number,section_identifier,grade)
 VALUES(17,112,'B');
 INSERT INTO grand_report(student_number,section_identifier,grade)
@@ -70,19 +90,58 @@ VALUES(8,102,'B');
 INSERT INTO grand_report(student_number,section_identifier,grade)
 VALUES(8,135,'A');
 
+```
+![OUTPUT](OP-4.png)
+
+# 1(a) 3. DESCRIBE ALL TABLES.
+
+```
  DESC student;
  DESC course;
  DESC section1;
  DESC grand_report;
- 
+
+```
+![OUTPUT](OP-5.png)
+![OUTPUT](OP-6.png)
+![OUTPUT](OP-7.png)
+![OUTPUT](OP-8.png)
+
+# 1(a) 4.LIST THE CREATED TABLES.
+
+```
+
 SELECT * FROM TAB;
- 
+
+```
+![OUTPUT](OP-9.png)
+
+# 1(a) 5.DISPLAY THE VALUES OF EACH TABLE.
+
+```
+
 SELECT * FROM student;
 SELECT * FROM course;
 SELECT * FROM section1;
 SELECT * FROM  grand_report;
-   
+
+```
+![OUTPUT](OP-10.png)
+![OUTPUT](OP-11.png)
+![OUTPUT](OP-12.png)
+![OUTPUT](OP-13.png)
+
+# 1(a) 6.DELETE ALL  TABLES.
+
+```
+
 DROP TABLE  student;
 DROP TABLE course;
 DROP TABLE section1;
 DROP TABLE grand_report;
+
+```
+
+![OUTPUT](OP-14.png)
+
+
