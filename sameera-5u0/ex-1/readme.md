@@ -33,7 +33,7 @@ CREATE TABLE grand_report
 );
 
 ```
-![OUTPUT](OP-1.png)
+![OUTPUT](./OP-1.jpeg)
 
 
 # 1(a) 2.INSERT ALL VALUES INSIDE THE TABLE.
@@ -54,7 +54,7 @@ INSERT INTO course( course_name,course_number, credit_hours,department)
 VALUES('DATA BASE',3380,3,'CS');
 
 ```
-![OUTPUT](OP-2.png)
+![OUTPUT](./OP-2.jpng)
 
 ```
 
